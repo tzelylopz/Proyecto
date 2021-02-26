@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario básico Itzel López</title>
+	<style type="text/css">
+		body {color: #cc99ff; background-color:#b3ffff}
+		.titulo { font-size: 40px; text-align: center; }
+		table {background-color: #ccffff; border: 3px solid; margin-left: auto; margin-right: auto;border-radius: 8px; width: 800px}
+         label{font-style: initial; font-family: "corbel";}
+         input {border-radius: 5px; background-color:#cc99ff }
+	</style>
+</head>
+<body>
+<form>
+	<table>
+		<tr><th class="titulo">Registro de usuario</th></tr>
+		<tr><td>Escribe la información que se te pide</td></tr>
+		<tr><td>
+			<h2>Datos básicos</h2>
+			<label for="nom">Nombre:</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Nombre" maxlength="10" required><br>
+            <label for="ape">Apellido:</label><br>
+            <input type="text" id="ape" name="ape" placeholder="Apellido" maxlength="15" required>
+            <hr>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required><br>
+            <label for="pwd">Contraseña:</label><br>
+            <input type="password" id="pwd" name="pwd" required>
+		</td></tr>
+		<tr><td>
+			<p>Sexo:</p>
+			<input type="radio" id="masculino" name="genero" value="m">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="femenino" name="genero" value="f">
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" id="otro" name="genero" value="o">
+            <label for="otro">Otro</label>
+
+            <p>Pasatiempos</p>
+            <input type="checkbox" id="pasa1" name="Pasatiempos" value="Leer">
+            <label for="pasa1"> Leer &#128512;</label><br>
+            <input type="checkbox" id="pasa2" name="Pasatiempos" value="Idiomas">
+            <label for="pasa2"> Aprender idiomas &#128516;</label><br>
+            <input type="checkbox" id="pasa3" name="Pasatiempos" value="Bailar">
+            <label for="pasa3"> Bailar Just Dance  &#128151;</label>
+            <hr>
+            <label for="idiom">Idioma</label>
+            <select id="idiom" name="Idiom">
+              <option value="esp">Español</option>
+              <option value="ing">Inglés</option>
+              <option value="fra">Frances</option>
+              <option value="alem">Alemán</option>
+         </select>
+         <p>Dejanos tu comentario</p>
+         <textarea name="message" placeholder="A mí me gustó..." rows="10" cols="30">
+        </textarea>
+        <br>
+        <input type="submit">
+		</td></tr>
+	</table>
+</form>
+</body>
+</html>
